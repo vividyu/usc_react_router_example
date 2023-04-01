@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+:root {
+  --margin-10: 10px;
+  --color-light-blue: lightblue;
+  --small-font: 12px;
+  --medium-font: 36px;
+}
+
+ul {
+  margin: var(--margin-10);
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-style {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
