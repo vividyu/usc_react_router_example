@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Bug fix
+If there is an error: "Error message "error:0308010C:digital envelope routines::unsupported":
+
+Enable legacy OpenSSL provider. 
+
+Reference: https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+
+On Unix-like (Linux, macOS, Git bash, etc.):
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+On Windows command prompt:
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+```
+On PowerShell:
+```
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
